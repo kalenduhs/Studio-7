@@ -7,9 +7,9 @@ public class Quiz {
 
     private int totalNumberOfQuestions = listOfQuestions.size();
 
-    public Quiz () {
-
-    }
+//    public Quiz (ArrayList<Question> questions) {
+//        this.listOfQuestions = questions;
+//    }
 
 
     public void addQuestion(Question aQuestion) {
@@ -32,5 +32,13 @@ public class Quiz {
 
     public void setTotalNumberOfQuestions(int totalNumberOfQuestions) {
         this.totalNumberOfQuestions = totalNumberOfQuestions;
+    }
+
+    @Override
+    public String toString() {
+        return "Quiz{" +
+                "listOfQuestions=" + listOfQuestions +
+                ", totalNumberOfQuestions=" + totalNumberOfQuestions +
+                '}';
     }
 }
